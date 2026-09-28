@@ -1,0 +1,14 @@
+{
+  "name": "kdv",
+  "N": 600,
+  "L": 60.0,
+  "dt": 0.01,
+  "T": 20.0,
+  "default_nt": 2001,
+  "ic_params": {"c0": 1.0, "c1": 0.5, "x00": "L/2 - 10", "x01": "L/2 - 5"},
+  "ic_vars": {
+    "xi0": "sqrt(c0)/2*(x - x00)",
+    "xi1": "sqrt(c1)/2*(x - x01)"
+  },
+  "ic": "2*(c0-c1)*(c0*cosh(xi1)**2 + c1*sinh(xi0)**2) / ((sqrt(c0)-sqrt(c1))*cosh(xi0+xi1) + (sqrt(c0)+sqrt(c1))*cosh(xi0-xi1))**2"
+}

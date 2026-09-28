@@ -1,0 +1,9 @@
+{
+  "name": "advection_diffusion",
+  "N": 126,
+  "L": 6.283185307179586,
+  "dt": 0.01,
+  "T": 2.5,
+  "default_nt": 251,
+  "ic": "exp(-((Mod(x - L/4 + L/2, L) - L/2)/0.4)**2)"
+}
